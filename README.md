@@ -1,6 +1,3 @@
-# <img src="assets/favicon.svg" style="height: 30px; margin-right: 10px;"> Portfolio 
-
-## My Official Portfolio
 
 Welcome to my Portfolio! This portfolio showcases my skills, projects, and experiences as a developer.
 
@@ -32,7 +29,7 @@ To set up the development environment for this portfolio, follow these steps:
 npm run dev
 ```
 
-## 🧙‍♂️ Production - GitHub Pages
+## Production - GitHub Pages
 
 This project is automatically deployed to GitHub Pages using GitHub Actions. Whenever you push to the main branch, the site will be built and deployed automatically.
 
