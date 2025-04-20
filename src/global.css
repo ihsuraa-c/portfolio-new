@@ -1,0 +1,245 @@
+@font-face {
+    font-family: 'Potter';
+    src: local('HarryPotter'), url('/fonts/HarryPotter.ttf') format('truetype');
+}
+
+.potter {
+    font-family: Potter, serif !important;
+}
+
+.text-shadow {
+    text-shadow: #000000 3px 3px 5px;
+}
+
+.nuxt-button-lead {
+    border: 3px solid #01dc83;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.nuxt-button-lead:hover {
+    border-color: #00fa95;
+    box-shadow: 0 0 20px rgba(1, 220, 131, 0.8);
+}
+
+.nuxt-dark:hover {
+    background-color: black !important;
+}
+
+.nuxt-button-lead:active {
+    box-shadow: 0 0 10px rgba(1, 220, 131, 0.4);
+}
+
+.nuxt-button-sub {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+.nuxt-button-sub:hover {
+    border-color: #00fa95;
+}
+
+.nuxt-button-sub:focus,
+.nuxt-button-sub:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+.nuxt-color {
+    color: #00fa95 !important;
+}
+
+/* Custom light cursor */
+body {
+  cursor: none;
+}
+
+/* Allow text interactions with custom cursor */
+a, button, input, textarea, select, .v-btn, [role="button"] {
+  cursor: none !important;
+}
+
+/* Make clickable elements react to hover */
+a:hover, button:hover, .v-btn:hover, [role="button"]:hover {
+  filter: brightness(1.2);
+}
+
+.cursor-light {
+  position: fixed;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 20px 8px rgba(255, 255, 255, 0.5), 
+              0 0 40px 15px rgba(255, 255, 255, 0.3);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  mix-blend-mode: screen;
+}
+
+.light-particle {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.3);
+  z-index: 9998;
+  opacity: 0.7;
+  transition: width 0.3s, height 0.3s;
+}
+
+/* Animation keyframes for effects */
+@keyframes float {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-10px) translateX(5px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+}
+
+/* Custom cursor styles */
+html, 
+body,
+a, 
+button,
+.v-btn,
+.clickable {
+  cursor: none !important;
+}
+
+/* Global CSS for responsive fixes */
+
+/* Fix for overflowing content */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Responsive font sizes */
+:root {
+  --responsive-h1: clamp(2rem, 5vw, 3.5rem);
+  --responsive-h2: clamp(1.8rem, 4vw, 3rem);
+  --responsive-h3: clamp(1.5rem, 3vw, 2.5rem);
+  --responsive-h4: clamp(1.2rem, 2.5vw, 2rem);
+  --responsive-body: clamp(0.9rem, 1.5vw, 1.1rem);
+}
+
+/* Fix for Safari and iOS 3D transforms */
+.v-main,
+.v-container,
+.v-row,
+.v-col {
+  transform: translateZ(0);
+}
+
+/* Fix for flickering transitions */
+* {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Ensure images don't break layouts */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Better touch targets for mobile */
+button, 
+a,
+.v-btn,
+[role="button"] {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Fix for mobile viewport height issues */
+.v-application {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  min-height: fill-available;
+}
+
+/* Fix for flex layouts on small screens */
+@media (max-width: 600px) {
+  .v-row {
+    margin: 0 -8px;
+  }
+  
+  .v-col {
+    padding: 0 8px;
+  }
+  
+  .v-container {
+    padding: 12px;
+  }
+}
+
+/* Fix iOS zoom on input focus */
+@media screen and (max-width: 600px) {
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* Fix scrollbar appearance */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    font-size: 12pt;
+  }
+  
+  a::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    font-weight: normal;
+  }
+}
