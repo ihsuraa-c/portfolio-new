@@ -63,4 +63,4 @@ Feel free to personalize and modify this README to align with your specific port
 
 
 CREDITSSSSS
-This portfolio is based on the original Harry Potter themed portfolio created by [ronhedwigzape](https://github.com/ronhedwigzape/portfolio). The original work is licensed under the MIT License and has been modified and personalized for my use. Many thanks to ronhedwigzape for creating such a beautiful and creative foundation.
+This portfolio is based on the original Harry Potter themed portfolio created by [ronhedwigzape](https://github.com/ronhedwigzape). The original work is licensed under the MIT License and has been modified and personalized for my use. Many thanks to ronhedwigzape for creating such a beautiful and creative foundation.
