@@ -1,8 +1,8 @@
-# <img src="assets/favicon.svg" style="height: 30px; margin-right: 10px;"> ronhedwigzape 
+# <img src="assets/favicon.svg" style="height: 30px; margin-right: 10px;"> Portfolio 
 
-## My Official Harry-Potter Themed Portfolio
+## My Official Portfolio
 
-Welcome to my Official Harry Potter Themed Portfolio! This portfolio showcases my skills, projects, and experiences as a developer, all with a magical touch inspired by the enchanting world of Harry Potter.
+Welcome to my Portfolio! This portfolio showcases my skills, projects, and experiences as a developer.
 
 ## 🦉 Development - Setup & Commands
 
@@ -11,13 +11,13 @@ To set up the development environment for this portfolio, follow these steps:
 1. Clone this repository to your preferred project path, or if you have [GitHub Desktop](https://desktop.github.com/), you can clone it using GitHub Desktop:
   
   ```shell
-  git clone https://github.com/ronhedwigzape/portfolio.git
+  git clone https://github.com/ihsuraa-c/portfolio-new.git
   ```
 
 2. Navigate to the project directory:
  
   ```shell
-  cd portfolio
+  cd portfolio-new
   ```
 
 3. Install dependencies:
@@ -34,74 +34,38 @@ npm run dev
 
 ## 🧙‍♂️ Production - GitHub Pages
 
-1. Delete the current `gh-pages` branch:
+This project is automatically deployed to GitHub Pages using GitHub Actions. Whenever you push to the main branch, the site will be built and deployed automatically.
 
-- Open your terminal or command prompt.
-- Type the following command and press Enter:
-  
-   ```shell
-   git push origin --delete gh-pages
-   ```
+If you want to manually trigger a deployment:
 
-2. Run the build command in the terminal:
-
-- Make sure you are in the **root** directory of your project.
-- Open your terminal or command prompt.
-- Type the following command and press Enter:
-
-   ```shell   
-   npm run build
-   ```
-  
-3. Commit the changes for deployment:
-
-- Open your terminal or command prompt.
-- Type the following command to force push **`/public`** and press Enter to commit:
-
-   ```shell
-   git add public -f
-   git commit -m "chore(deployment): deploy to production"
-   ```
-  
-4. Push the built project to the gh-pages branch:
-
-- Open your terminal or command prompt.
-- Type the following command and press Enter:
-
-   ```shell
-   git subtree push --prefix public origin gh-pages
-   ```
-  
-5. After deployment:
-
-- Open GitHub Desktop or your preferred Git client.
-- Undo the commit you made in the previous step to revert the changes locally.
-
-By following these steps, you can deploy your website to production using GitHub Pages.
+1. Go to the GitHub repository
+2. Navigate to Actions tab
+3. Select the "Deploy to GitHub Pages" workflow
+4. Click "Run workflow"
 
 ## ✨ Features
-- Custom Harry Potter themed design and layout
-- Interactive elements inspired by the magical world of Harry Potter and from [Nuxt](https://nuxt.com/) UI
-- [AudioManager.js](/assets/js/audioManager.js) script for playing theme audio when interacting with the website
+- Custom design and layout
+- Interactive UI elements
+- Responsive design for all devices
 
 ## 👨‍💻 Technologies Used
 
 The following technologies were used to develop this portfolio:
 
 - Vue.js 3 Composition API
+- Vuetify
 - Pinia
 - Axios
-- Vuetify
 - JavaScript
 
 Feel free to customize the content, styles, and images to make it your own.
 
 ## ⚖ License
-This project is licensed under the [MIT License](/LICENSE). Feel free to modify and use it to showcase your own work.
+This project is licensed under the MIT License.
 
 ---
 
-Feel free to personalize and modify this README to align with your specific portfolio. Best of luck with your Official Harry Potter Themed Developer Portfolio!
+Feel free to personalize and modify this README to align with your specific portfolio!
 
 
 
