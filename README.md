@@ -60,9 +60,6 @@ The following technologies were used to develop this portfolio:
 
 Feel free to customize the content, styles, and images to make it your own.
 
-## ⚖ License
-This project is licensed under the MIT License.
-
 ---
 
 Feel free to personalize and modify this README to align with your specific portfolio!
